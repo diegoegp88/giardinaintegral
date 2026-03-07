@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Giardina | Servicios Electromecánicos</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+<body>
+    <div class="hero" id="hero">
+        <h1>Servicios Electromecánicos Giardina</h1>
+        <p>Técnico Electromecánico | Soluciones Integrales</p>
+    </div>
+
+    <nav id="menu">
+        <a href="#1">Domiciliaria</a>
+        <a href="#2">Industrial</a>
+        <a href="#3">Reparaciones</a>
+        <a href="#4">Contacto</a>
+        <a href="#5">Presupuesto</a>
+        <span class="indicador" id="indicador"></span>
+    </nav>
+
+    <div class="secciones">
+        <div class="seccion" id="1">
+            <div class="card">
+                <h1>Electricidad Domiciliaria</h1>
+                <video class="img" autoplay controls muted loop>
+                    <source src="video/domiciliaria.mp4" type="video/mp4" />
+                </video>
+                <p>
+                    <ul>
+                        <li>Instalaciones eléctricas completas en obras nuevas.</li>
+                        <li>Recableados y adecuación de viviendas antiguas.</li>
+                        <li>Armado y reparación de tableros (Térmicas y Disyuntores).</li>
+                        <li>Iluminación LED y automatización (fotocélulas, sensores).</li>
+                        <li>Certificaciones y pedidos de medidor.</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="seccion" id="2">
+            <div class="card">
+                <h1>Servicios Industriales</h1>
+                <video class="img" autoplay controls muted loop>
+                    <source src="video/industrial.mp4" type="video/mp4" />
+                </video>
+                <p>
+                    <ul>
+                        <li>Mantenimiento preventivo y correctivo de plantas.</li>
+                        <li>Tableros de comando y automatización industrial.</li>
+                        <li>Instalación y reparación de motores eléctricos y bombas.</li>
+                        <li>Corrección de factor de potencia (Capacitores).</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="seccion" id="3">
+            <div class="card">
+                <h1>Reparaciones</h1>
+                <img class="img2" src="img/reparacion.jpg" alt="Reparaciones">
+                <h2 class="contenedor-texto">Especialista en: <br> <span class="typed"></span></h2>
+                </div>
+        </div>
+
+        <div class="seccion" id="4">
+            <div class="card">
+                <h1>Contacto</h1>
+                <iframe class="img" src="https://www.google.com/maps/embed?pb=..." width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <div>
+                    <br>
+                    <p><b>Zona de cobertura:</b> San Miguel de Tucumán y alrededores.</p>
+                    <h2><b>Diego Exequiel Giardina - Técnico Electromecánico</b></h2>
+                    <br>
+                    <p><b>WhatsApp:</b> <a href="https://wa.me/+543815764218" target="_blank">381 576 4218</a> <img class="logo" src="https://static.whatsapp.net/rsrc.php/yz/r/lOol7j-zq4u.svg" width="40px" height="40px"></p>
+                    <p><b>Email:</b> <a href="mailto:tuemail@gmail.com?Subject=Consulta">tuemail@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="seccion" id="5">
+            <div class="card">
+                <h1>Solicitá tu Presupuesto</h1>
+                <br>
+                <form action="" class="formulario" id="formulario">     
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Juan Pérez">
+                        </div>
+                    </div>
+        
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Teléfono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="381...">
+                        </div>
+                    </div>
+        
+                    <div class="formulario__grupo" id="grupo__servicio">
+                        <label for="servicio" class="formulario__label">Tipo de Trabajo</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="servicio" id="servicio" placeholder="Ej: Falla en tablero / Reparación de heladera">
+                        </div>
+                    </div>
+        
+                    <div class="formulario__grupo" id="grupo__consulta">
+                        <label for="consulta" class="formulario__label">Contanos el problema</label>
+                        <div class="formulario__grupo-input">
+                            <textarea class="formulario__input" name="consulta" id="consulta" placeholder="Escriba aquí los detalles..."></textarea>
+                        </div>
+                    </div>
+        
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar Consulta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
